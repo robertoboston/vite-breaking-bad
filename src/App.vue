@@ -9,6 +9,18 @@ export default {
             store
         }
     },
+    created(){
+        this.getCardlist()
+    },
+    methods:{
+        getCardlist(){
+            axios.get(store.url).then((response) => {
+                console.log(response.data)
+                this.store.cardlist = response.data.data
+                this.store.loading = false
+            })
+        }
+    }
     
 }
 
