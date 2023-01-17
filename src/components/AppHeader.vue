@@ -8,7 +8,6 @@ export default {
 </script>
 <template>
     <header class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg" alt="">
         <h1 class="app-title">{{ message }}</h1>
     </header>
 </template>
@@ -19,9 +18,6 @@ header {
     @include center;
     margin-top: 2rem;
     align-items: center;
-    img {
-        width: 200px;
-    }
     .app-title {
         text-align: center;
         text-transform: uppercase;

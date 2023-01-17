@@ -40,47 +40,4 @@ h4 {
     margin-top: 10px;
     color: white;
 }
-.flip-card {
-    height: 400px;
-    width: 200px;
-    margin: 1em;
-    padding: 1em;
-    background-color: orange;
-    border: 1px solid black;
-    @include between;
-    flex-direction: column;
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-    .card-description {
-        margin-top: 4em;
-    }
-}
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: .8em;
-}
 </style>

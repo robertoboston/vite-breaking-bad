@@ -2,13 +2,11 @@
 import axios from 'axios'
 import AppHeader from './components/AppHeader.vue';
 import CharactersList from './components/CharactersList.vue';
-import AppSelects from './components/Appselects.vue'
 import { store } from './store.js';
 export default {
   components: {
     AppHeader,
     CharactersList,
-    AppSelects,
   },
   data() {
     return {

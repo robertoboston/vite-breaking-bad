@@ -15,7 +15,7 @@ export default {
 </script>
 <template lang="">
     <div class="container_select">
-        <div class="found">
+        <div>
             <h2>found 39 card</h2>
         </div>
         <div class="loading" v-if="store.loading">
@@ -38,12 +38,6 @@ export default {
     background-color: white;
     .container_card {
         @include between;
-    }
-    .found {
-        padding: 1em 2em;
-        background-color: rgb(62, 62, 62);
-        @include upbold;
-        color: white;
     }
     .loading {
         display: flex;
