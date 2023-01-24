@@ -1,16 +1,37 @@
 <script>
+import {store} from '../store.js'
+import CharacterCard from './CharacterCard.vue'
 
 export default {
+    components:{
+        CharacterCard,
+    },
+    data(){
+        return{
+            store
+
+        }
+        
+    }
     
 }
 </script>
 
 <template lang="">
-    <div>
-        
+   <main class="container">
+    <div class="row">
+        <h1>Carte trovate {{ store.cardsList.length}}</h1> 
     </div>
+        <div class="row">
+            <CharacterCard v-for="(item , index) in store.cardsList" :key="index" :card="item"></CharacterCard>
+        </div>
+   </main>
 </template>
 
-<style lang="">
+<style lang="scss" scoped>
+main{
+    background-color: white;
+    margin-top: 3rem;
+}
     
 </style>
