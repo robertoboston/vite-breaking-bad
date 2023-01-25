@@ -21,7 +21,7 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class="mt-5">
-                    <select v-model="store.selectedGenere">
+                    <select v-model="store.selectedGenere" @change="$emit('filter')">
                         <option v-for="item in archetypes" :value="item">{{item}}</option>
                     </select> 
                 </div>
