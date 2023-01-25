@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template lang="">
-   <main class="container">
+   <main class="container my-3 p-2">
     <div class="row">
         <h1>Carte trovate {{ store.cardsList.length}}</h1> 
     </div>

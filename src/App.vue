@@ -27,7 +27,10 @@ export default {
         getCardsList (){
             axios.get(store.url).then((response) => {
                 store.cardsList = response.data.data
-                store.isLoaded = true;
+                setTimeout(()=>{
+                    store.isLoaded = true;
+                },3000)
+                
             })
         }
 
